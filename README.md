@@ -7,6 +7,7 @@ This project combines real-time object detection using YOLOv8 with concurrent ne
 <img src="demo1.png">
 <img src="demo2.png">
 <img src="demo3.png">
+<img src="demo4.png">
 </h1>
 
 ## Features
