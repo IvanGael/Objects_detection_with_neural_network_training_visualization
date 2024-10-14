@@ -10,8 +10,8 @@ import time
 import os
 from sklearn.metrics import precision_recall_curve, confusion_matrix, ConfusionMatrixDisplay
 
-# Load YOLOv8 model from Ultralytics hub
-model = YOLO('yolov8x')
+# Load model from Ultralytics hub
+model = YOLO('yolo11x')
 
 # Open video capture
 cap = cv2.VideoCapture('video.mp4')
@@ -185,10 +185,10 @@ while cap.isOpened():
     cv2.putText(frame_with_boxes, f'FPS: {fps:.2f}', (10, 620), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
     cv2.putText(frame_with_boxes, f'Inference Time: {inference_time:.2f}s', (10, 650), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
-    cv2.namedWindow("YOLOv8 Object Detection", cv2.WINDOW_NORMAL)
+    cv2.namedWindow("Object Detection with Neural Network Training", cv2.WINDOW_NORMAL)
 
     # Display the frame with bounding boxes and analytics
-    cv2.imshow('YOLOv8 Object Detection', frame_with_boxes)
+    cv2.imshow('Object Detection with Neural Network Training', frame_with_boxes)
 
     frame_count += 1
 

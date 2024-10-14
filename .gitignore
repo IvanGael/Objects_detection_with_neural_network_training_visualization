@@ -1,4 +1,5 @@
 yolov8x.pt
+yolo11x.pt
 temp_plot.png
 confusion_matrix_plot.png
 precision_recall_plot.png
